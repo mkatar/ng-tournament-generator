@@ -1,0 +1,22 @@
+<div class="container-fluid ">
+    <div class="row">
+
+        <div class="col-md-2">
+            <dropdown-comp [items]='teams' [excludeItem] = 'selectedAwayTeam' (selectedItemClicked)='onHomeTeamSelection($event)'></dropdown-comp>
+        </div>
+        <div class="col-md-2">
+            <div class="input-group">
+                <input type="number" min="0" max="50" step="1" required class="form-control" onkeydown="return false" [(ngModel)]='homeTeamScore'
+                    autocomplete="off" />
+
+                <span class="input-group-addon">-</span>
+                <input name="away" type="number" min="0" max="50" required class="form-control" onkeydown="return false" [(ngModel)]='awayTeamScore'
+                    autocomplete="off">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <dropdown-comp [items]='teams' [excludeItem] = 'selectedHomeTeam' (selectedItemClicked)='onAwayTeamSelection($event)'></dropdown-comp>
+        </div>
+        <button class=" btn btn-success" (click)='save();'  [disabled]="!isMatchValid()"> Save </button>
+    </div>
+</div>

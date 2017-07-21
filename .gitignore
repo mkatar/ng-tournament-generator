@@ -1,0 +1,12 @@
+typings
+**/app/**/*.js
+**/app/**/*.map
+node_modules
+.vscode
+
+.vs
+**/*.sou
+**/*.user
+bin
+obj
+packages

@@ -1,0 +1,19 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="row left-buffer">
+        <div class="col-md-8">
+            <tg-list [teams]='teams'></tg-list>
+        </div>
+        <div class="col-md-4">
+            <team-add></team-add>
+        </div>
+    </div>
+    <div class="row top-buffer left-buffer">
+        <game-result [teams]='teams'></game-result>
+    </div>
+    <div class="row top-buffer left-buffer">
+        <match-history [matchsHistory]='matchsHistory'></match-history>
+    </div>
+</div>

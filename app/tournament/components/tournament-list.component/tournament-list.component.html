@@ -1,0 +1,35 @@
+<div class='table-responsive'>
+    <table class="table table-responsive table-striped ">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>Played</th>
+                <th>Wins</th>
+                <th>Draws</th>
+                <th>Losses</th>
+                <th>Scored</th>
+                <th>Against</th>
+                <th>Difference</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td align="center" colspan="10" *ngIf='teams.length == 0'>
+                There's no data
+            </td>
+            <tr *ngFor='let team of teams; let i = index'>
+                <td>{{i+1}}</td>
+                <td>{{team.name}} </td>
+                <td>{{ team.played }}</td>
+                <td>{{ team.wins }}</td>
+                <td>{{ team.draws }}</td>
+                <td>{{ team.losses }}</td>
+                <td>{{ team.scored }} </td>
+                <td>{{ team.against }} </td>
+                <td>{{ team.difference }} </td>
+                <td>{{ team.points }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

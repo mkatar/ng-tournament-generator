@@ -1,0 +1,4 @@
+<select class="select_join" (change)="onSelect($event.target.value)">
+       <option  disabled hidden >-- select --</option> 
+      <option *ngFor="let item of items | excludeObjectfilter: excludeItem" [value]="item.id">{{item.name}}</option>
+    </select>
