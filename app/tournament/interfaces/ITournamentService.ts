@@ -13,6 +13,6 @@ export interface ITournamentService {
     updateTeamsStats(match: IMatch): void;
     undoMatch(matchId: number): void;
     toggleTeamStats(team: ITeam, teamMatchStats: ITeamMatchStats, add: boolean): void;
-    getMetchResult(scoredGoals: number, receivedGoals: number): MatchResult;
+    getMatchResult(scoredGoals: number, receivedGoals: number): MatchResult;
     getTeamMatchStats(scoredGoals: number, receivedGoals: number, matchResult: MatchResult): ITeamMatchStats;
 }

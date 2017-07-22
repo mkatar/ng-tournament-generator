@@ -18,7 +18,7 @@ export class TournamentViewComponent extends OnInit {
     }
 
     ngOnInit(): void {
-        this.teams = this.tournamentServise.getTeams().sort(function (a, b) { return b.points - a.points });;
+        this.teams = this.tournamentServise.getTeams().sort((a, b) => { return b.points - a.points });;
         this.matchsHistory = this.tournamentServise.getMatches();
     }
 }

@@ -111,7 +111,7 @@ export class TournamentService implements ITournamentService {
         this.matchResults[teamMatchStats.matchResult](team, operation);
     }
 
-    getMetchResult(scoredGoals: number, receivedGoals: number): MatchResult {
+    getMatchResult(scoredGoals: number, receivedGoals: number): MatchResult {
         if (scoredGoals === receivedGoals) {
             return MatchResult.Draw;
         }

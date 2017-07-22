@@ -39,8 +39,8 @@ export class GameResultComponent {
             awayTeamName: this.selectedAwayTeam.name,
             homeTeamId: this.selectedHomeTeam.id,
             homeTeamName: this.selectedHomeTeam.name,
-            awayTeamResult: this.tournamentService.getMetchResult(this.awayTeamScore, this.homeTeamScore),
-            homeTeamResult: this.tournamentService.getMetchResult(this.homeTeamScore, this.awayTeamScore)
+            awayTeamResult: this.tournamentService.getMatchResult(this.awayTeamScore, this.homeTeamScore),
+            homeTeamResult: this.tournamentService.getMatchResult(this.homeTeamScore, this.awayTeamScore)
         };
 
         this.tournamentService.addMatch(match);
