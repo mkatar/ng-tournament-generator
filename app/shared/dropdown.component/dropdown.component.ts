@@ -15,6 +15,6 @@ export class DropdownComponent<T extends IDropdownBase>  {
     new EventEmitter<T>();
 
     onSelect(teamId: number) {
-        this.selectedItemClicked.emit(this.items.filter((a) => { return a.id == teamId })[0]);
+        this.selectedItemClicked.emit(this.items.filter((a) => { return a.id === Number(teamId) })[0]);
     }
 }
