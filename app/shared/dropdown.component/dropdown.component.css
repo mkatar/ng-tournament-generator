@@ -2,29 +2,32 @@
     width: 100%;
     height: 32px;
     overflow: hidden;
-    background: white;
     border: gray 1px solid;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
-    -webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
     box-shadow: inset 0px 0px 10px 1px #FEFEFE;
     display: inline-block;
+
+    background: white;
+
+     -webkit-border-radius: 3px;
+     -webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
 }
 
 .select_join select {
-    background: transparent;
-    /*width: 170px;*/
     width: 100%;
-    font-size: 7pt;
-    color: grey;
     border: 0;
     border-radius: 0;
     height: 32px;
-    -webkit-appearance: none;
+
     display: inline-block;
+    background: transparent;
+    color: grey;
+
+    font-size: 7pt;
+
+    -webkit-appearance: none;
 }
 
 .select_join select:focus {
     outline: none;
 }
-

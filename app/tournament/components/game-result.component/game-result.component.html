@@ -2,7 +2,7 @@
     <div class="row">
 
         <div class="col-md-2">
-            <dropdown-comp [items]='teams' [excludeItem] = 'selectedAwayTeam' (selectedItemClicked)='onHomeTeamSelection($event)'></dropdown-comp>
+            <dropdown-comp [items]='teams' [excludeItem]='selectedAwayTeam' (selectedItemClicked)='onHomeTeamSelection($event)'></dropdown-comp>
         </div>
         <div class="col-md-2">
             <div class="input-group">
@@ -15,8 +15,8 @@
             </div>
         </div>
         <div class="col-md-2">
-            <dropdown-comp [items]='teams' [excludeItem] = 'selectedHomeTeam' (selectedItemClicked)='onAwayTeamSelection($event)'></dropdown-comp>
+            <dropdown-comp [items]='teams' [excludeItem]='selectedHomeTeam' (selectedItemClicked)='onAwayTeamSelection($event)'></dropdown-comp>
         </div>
-        <button class=" btn btn-success" (click)='save();'  [disabled]="!isMatchValid()"> Save </button>
+        <button class=" btn btn-success" (click)='save();' [disabled]="!isMatchValid()"> Save </button>
     </div>
 </div>
