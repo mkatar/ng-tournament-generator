@@ -10,4 +10,6 @@ Functionality:
 3. Add match info.
 4. Remove played match in match history component.
 
-<img width="855" alt="tg_screenshot" src="https://user-images.githubusercontent.com/11653790/28241548-018c1adc-6997-11e7-87cd-f39f371b705f.png">
+This project stores data in memory right now, but I have plans to add some MongoDB DB and some authentication functionality in future.
+
+<img width="853" alt="tg_screenshot" src="https://user-images.githubusercontent.com/11653790/28492741-f3af8404-6f08-11e7-9434-6d107b289fb2.png">
